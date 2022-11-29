@@ -14,7 +14,7 @@ public class ProductController {
     @Autowired
     private ProductDao productDao;
 
-    @GetMapping("/")
+    @GetMapping("/data")
     public List<Product> getProducts()
     {
         return productDao.getProducts();
